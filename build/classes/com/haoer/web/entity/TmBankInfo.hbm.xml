@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-3 23:13:54 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.haoer.web.entity.TmBankInfo" table="tm_bank_info" catalog="test">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="bank" type="string">
+            <column name="BANK">
+                <comment>&#210;&#248;&#208;&#208;&#208;&#197;&#207;&#162;</comment>
+            </column>
+        </property>
+        <property name="billDay" type="java.lang.Integer">
+            <column name="BILL_DAY">
+                <comment>&#213;&#203;&#181;&#165;&#200;&#213;</comment>
+            </column>
+        </property>
+        <property name="dueDate" type="timestamp">
+            <column name="DUE_DATE" length="19">
+                <comment>&#181;&#189;&#198;&#218;&#200;&#213;</comment>
+            </column>
+        </property>
+        <property name="totalAmount" type="big_decimal">
+            <column name="TOTAL_AMOUNT" precision="10">
+                <comment>&#215;&#220;&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="normalAmount" type="big_decimal">
+            <column name="NORMAL_AMOUNT" precision="10">
+                <comment>&#213;&#253;&#179;&#163;&#207;&#251;&#183;&#209;&#189;&#240;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="cashAmount" type="big_decimal">
+            <column name="CASH_AMOUNT" precision="10">
+                <comment>&#204;&#215;&#207;&#214;&#189;&#240;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="cashFee" type="big_decimal">
+            <column name="CASH_FEE" precision="10">
+                <comment>&#204;&#215;&#207;&#214;&#202;&#214;&#208;&#248;&#183;&#209;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

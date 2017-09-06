@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-3 23:13:54 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.haoer.web.entity.TUser" table="t_user" catalog="test">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="age" type="string">
+            <column name="age" length="32" />
+        </property>
+        <property name="userName" type="string">
+            <column name="userName" length="32" />
+        </property>
+    </class>
+</hibernate-mapping>
